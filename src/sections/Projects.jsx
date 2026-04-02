@@ -4,22 +4,27 @@ import { Reveal } from '../components/Reveal'
 import { SectionHeading } from '../components/SectionHeading'
 import { Card } from '../components/Card'
 import { Badge } from '../components/Badge'
+import { Icon } from '../components/Icon'
 import { profile } from '../data/profile'
 
 function ProjectCard({ p, i }) {
+  const href = p.figmaUrl ?? '#'
   return (
     <Reveal delay={i * 0.04}>
       <motion.a
-        href="#contact"
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
         whileHover={{ y: -4 }}
         transition={{ type: 'spring', stiffness: 320, damping: 26 }}
-        className="group block"
+        className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fuchsia-300/60 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950"
+        aria-label={`${p.title} — open Figma prototype`}
       >
         <Card className="overflow-hidden">
           <div className="relative aspect-[16/9] bg-white/5">
             <img
               src={p.preview}
-              alt={`${p.title} preview`}
+              alt={`${p.title} cover`}
               className="h-full w-full object-cover opacity-95 transition duration-300 group-hover:opacity-100"
               loading="lazy"
             />
@@ -36,8 +41,8 @@ function ProjectCard({ p, i }) {
               ))}
             </div>
             <div className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-white/85">
-              Request full case study
-              <span className="transition group-hover:translate-x-0.5">→</span>
+              Open Figma prototype
+              <Icon name="external" className="opacity-80 transition group-hover:translate-x-0.5" />
             </div>
           </div>
         </Card>

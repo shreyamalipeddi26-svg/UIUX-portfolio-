@@ -62,28 +62,36 @@ export const profile = {
       description:
         'Responsive rental system with search and pricing flow. Designed screens for booking, feedback, and vehicle selection.',
       tags: ['Responsive UI', 'Flow design', 'Booking UX'],
-      preview: '/previews/project-car-rental.svg',
+      preview: '/carRental.jpeg',
+      figmaUrl:
+        'https://www.figma.com/proto/VxQK22dLQak9uW9apXQTYg/Untitled?node-id=1-6&t=H5J3CFuoNvVRV4nQ-1&starting-point-node-id=1%3A6',
     },
     {
       title: 'Makeup & Beauty Website (Sephora style)',
       description:
         'Modern, minimal UI for makeup products. Highlighted product imagery and a simple purchase flow.',
       tags: ['E-commerce UI', 'Product cards', 'Checkout flow'],
-      preview: '/previews/project-beauty.svg',
+      preview: '/makeupAndBeauty.jpeg',
+      figmaUrl:
+        'https://www.figma.com/proto/RYILwbNyobhioxfHUaErQe/Untitled?node-id=3-5&t=CRHfMrNxOpg7XS00-1&starting-point-node-id=3%3A5',
     },
     {
       title: 'Cashback Card Landing Page',
       description:
         'Clean landing page for ICEBACK credit card with a simple cashback calculator and benefits storytelling.',
       tags: ['Landing page', 'Marketing UX', 'Calculator'],
-      preview: '/previews/project-cashback.svg',
+      preview: '/cashbackCard.jpeg',
+      figmaUrl:
+        'https://www.figma.com/proto/EaWaZ4WkQjat76ljAYoOrS/Untitled?node-id=2-2&t=R1HJ2eSQqO5fEwHt-1&starting-point-node-id=2%3A2',
     },
     {
       title: 'Food Delivery App (UI/UX)',
       description:
         'User-friendly interface for ordering with live tracking and smooth navigation with clear CTAs.',
       tags: ['Mobile UX', 'Live tracking', 'Navigation'],
-      preview: '/previews/project-food.svg',
+      preview: '/foodDelivery.png',
+      figmaUrl:
+        'https://www.figma.com/proto/lWyXeCJuNPxFXAPkLWbId0/Untitled?node-id=0-1&t=3soDU8ppJWKujKew-1',
     },
   ],
 }
